@@ -1,0 +1,271 @@
+﻿body {
+	width: 1000px;
+	height: 720px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Arial;	
+}
+
+nav {
+	width: 700px;
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+	nav a {
+		text-decoration: none;
+		color: #015C65;
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+		nav a:hover {
+			text-decoration: underline;
+		}
+
+nav ul {
+	display: inline-block;
+	text-align: center;
+}
+
+	nav ul li {
+		list-style: none;
+		float: left;
+		padding-left: 1.25em;
+		padding-right: 1.25em;
+		font-size: 14px;
+		overflow: hidden;
+	}
+
+		nav ul li.links {
+			padding-top: 1em;
+			padding-bottom: 1em;
+		}
+
+		nav ul li img.logo {
+			width: 150px;
+			height: 60px;
+		}
+
+form#connectform {
+	padding: 0;
+	margin: 0;
+}
+
+div.connect-label {
+	float: left;
+}
+
+h3, h4{
+	color: #015C65;
+}
+
+	h4.error {
+		color: red;
+	}
+
+	h4.credential {
+		color: red;
+		width: 650px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+h5 {
+	padding: 0;
+	margin: 0;
+}
+
+div.footer-container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	padding-left: 3.5em;
+}
+
+/* Forms */
+form {
+	width: 970px;	
+	padding: 1.5em;
+	padding-top:  0;
+}
+
+div.form-container {
+	width: 450px;
+	border: 1px solid black;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+div.inputs {
+	padding-left: 1.5em;
+	color: black;
+	font-size: 11.5pt;
+}
+
+/* Flights.aspx */
+div.flights {
+	height: 200px;
+	width: 970px;
+	border: 1px solid black;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+div.from {
+	width: 270px;
+	height: 150px;
+	display: inline-block;
+	float: left;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	margin-left: 2em;
+}
+
+div.plane {	
+	float: left;
+	display: inline-block;
+	width: 270px;
+	height: 150px;
+	overflow: hidden;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+	div.plane img {
+		width: 40%
+	}
+
+div.to {
+	float: left;
+	display: inline-block;
+	width: 270px;
+	height: 150px;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+div.select-button {
+	margin-top: 5.2em;
+	margin-bottom: 5.2em;
+}
+
+/* SearchHotels.aspx */
+div.hotels {
+	height: 175px;
+	width: 970px;
+	border: 1px solid black;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+div.hotel-container {
+	width: 650px;
+	height: 170px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+div.hotel-img {
+	float: left;
+	margin-left: 1.5em;
+	overflow: hidden;
+	width: 200px;
+}
+
+div.hotel-address {
+	float: left;
+	margin-left: 2em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	width: 250px;
+	overflow: hidden;
+}
+
+div.hotel-button {
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
+
+h2.hotel-price {
+	margin-bottom: 0;
+}
+
+/* SearchCars.aspx */
+div.cars {
+	height: 150px;
+	width: 970px;
+	border: 1px solid black;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+div.car-container {
+	width: 650px;
+	height: 145px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+div.car-image-container{
+	width: 250px;	
+	height: 140px;
+	float: left;
+}
+
+	div.car-image-container img {
+		width: 50%;
+		margin-top: 3em;
+		margin-bottom: 3em;
+	}
+
+div.car-info {
+	width: 250px;
+	height: 140px;
+	float: left;
+	margin-bottom: 1em;
+}
+
+div.car-button {
+	margin-top: 4em;
+	margin-bottom: 4em;
+}
+
+/* Confirm */
+div.confirm-container {
+	width: 720px;
+	border: 1px solid black;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+	div.confirm-container ul{
+		list-style: none;
+		line-height: 2em;
+	}
+
+		div.confirm-container ul li {
+			color: #015C65;
+			font-weight: bold;
+		}

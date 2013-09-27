@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2237BB9A-7F7F-4207-A94D-B7FF64A43D9C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OpenBookingSample</RootNamespace>
+    <AssemblyName>OpenBookingSample</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Car\Car.aspx" />
+    <Content Include="Air\ConfirmAir.aspx" />
+    <Content Include="Car\ConfirmCar.aspx" />
+    <Content Include="Hotel\ConfirmHotel.aspx" />
+    <Content Include="Images\ahmad-autos.png" />
+    <Content Include="Images\ameer-suites.png" />
+    <Content Include="Images\steve-air.png" />
+    <Content Include="Air\SearchAir.aspx" />
+    <Content Include="Hotel\Hotel.aspx" />
+    <Content Include="Images\car.gif" />
+    <Content Include="Images\car.png" />
+    <Content Include="Images\cargo.gif" />
+    <Content Include="Images\cargo.jpg" />
+    <Content Include="Images\concur.png" />
+    <Content Include="Images\hotel1.jpg" />
+    <Content Include="Images\hotel2.jpg" />
+    <Content Include="Images\hotel3.jpg" />
+    <Content Include="Images\plane.png" />
+    <Content Include="Images\truck.jpg" />
+    <Content Include="Car\SearchCars.aspx" />
+    <Content Include="Hotel\SearchHotels.aspx" />
+    <Content Include="script.js" />
+    <Content Include="style.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Air\Air.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Car\Car.aspx.cs">
+      <DependentUpon>Car.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car\Car.aspx.designer.cs">
+      <DependentUpon>Car.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Air\ConfirmAir.aspx.cs">
+      <DependentUpon>ConfirmAir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Air\ConfirmAir.aspx.designer.cs">
+      <DependentUpon>ConfirmAir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Car\ConfirmCar.aspx.cs">
+      <DependentUpon>ConfirmCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car\ConfirmCar.aspx.designer.cs">
+      <DependentUpon>ConfirmCar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel\ConfirmHotel.aspx.cs">
+      <DependentUpon>ConfirmHotel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hotel\ConfirmHotel.aspx.designer.cs">
+      <DependentUpon>ConfirmHotel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Air\SearchAir.aspx.cs">
+      <DependentUpon>SearchAir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Air\SearchAir.aspx.designer.cs">
+      <DependentUpon>SearchAir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel\Hotel.aspx.cs">
+      <DependentUpon>Hotel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hotel\Hotel.aspx.designer.cs">
+      <DependentUpon>Hotel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Air\Air.aspx.cs">
+      <DependentUpon>Air.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Air\Air.aspx.designer.cs">
+      <DependentUpon>Air.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Car\SearchCars.aspx.cs">
+      <DependentUpon>SearchCars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car\SearchCars.aspx.designer.cs">
+      <DependentUpon>SearchCars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel\SearchHotels.aspx.cs">
+      <DependentUpon>SearchHotels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hotel\SearchHotels.aspx.designer.cs">
+      <DependentUpon>SearchHotels.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\HttpClient\HttpClient.csproj">
+      <Project>{878eabfe-e7ab-48ae-bf6b-36343aa8582d}</Project>
+      <Name>HttpClient</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49618</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/OpenBookingSample</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
